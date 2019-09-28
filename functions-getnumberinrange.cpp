@@ -4,8 +4,8 @@
 // functions-getnumberinrange.cpp
 // This program will ask the user to enter a number and check that it is
 // within a specified range. If it's not, the user is asked to try again.
-// This is the resulting program after we "functionalized" the original version
-// which is in functions-originalgetnumber.c
+// This is the resulting program after we "functionalized" the original 
+// version which is in functions-originalgetnumber.cpp
 
 #include <iostream>
 
