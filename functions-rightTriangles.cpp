@@ -18,6 +18,8 @@ float findHypotenuse(float a, float b);
 // main function
 int main() {
 
+    const int MAX=3;    // controls the max length for each size
+
     float side1, side2, hypotenuse;
     int i, j;
     
@@ -30,12 +32,15 @@ int main() {
     cout << "Table of right triangle dimensions\n" << endl;
     cout << "Side 1\tSide 2\tHypotenuse" << endl;
     
-    for (i=1; i <=3; i++) {     // side 1 goes from 1 to 5 cm     
-        for (j=1; j<=3; j++) {  // side 2 goes from 1 to 5 cm
+    for (i=1; i <= MAX; i++) {     // side 1 goes from 1 to MAX 
+        
+        for (j=1; j<= MAX; j++) {  // side 2 goes from 1 to MAX 
+        
             cout << i << "\t" << j;
             hypotenuse = findHypotenuse(i, j);
             cout << "\t" << hypotenuse << endl;   
         }
+        
     }
     cout << endl;
 
