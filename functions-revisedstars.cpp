@@ -1,4 +1,4 @@
-// ENGR 23004 - Class Example 
+// ENGR 2304 - Class Example 
 // Week 6 - Functions
 //
 // functions-revisedstars.cpp
