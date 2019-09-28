@@ -28,8 +28,6 @@ int main() {
     printStars(number4);
     printStars(number5);
     
-    cout << endl;
-    
     return 0;
 }
 
