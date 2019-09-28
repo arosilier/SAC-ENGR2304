@@ -1,7 +1,7 @@
-// ENGR 23004 - Class Example 
+// ENGR 2304 - Class Example 
 // Week 6 - Functions
 //
-// functions-getnumberinrange.c
+// functions-getnumberinrange.cpp
 // This program will ask the user to enter a number and check that it is
 // within a specified range. If it's not, the user is asked to try again.
 // This is the resulting program after we "functionalized" the original version
