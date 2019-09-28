@@ -18,7 +18,6 @@ void printStars(int number);
 int main() {
 
     int number1, number2, number3, number4, number5;
-    int counter;
     
     cout << "Please enter 5 integers: ";
     cin >> number1 >> number2 >> number3 >> number4 >> number5;
