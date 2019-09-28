@@ -1,7 +1,7 @@
-// ENGR 23004 - Class Example 
+// ENGR 2304 - Class Example 
 // Week 6 - Functions
 //
-// functions-originalgetnumber.c
+// functions-originalgetnumber.cpp
 // This program will ask the user to enter five numbers and then
 // print five rows of stars corresponding to the numbers entered.
 // This is the original version that is not using functions.
