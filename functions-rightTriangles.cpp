@@ -18,7 +18,7 @@ float findHypotenuse(float a, float b);
 // main function
 int main() {
 
-    const int MAX=3;    // controls the max length for each size
+    const int MAX=3;    // controls the max length for each side
 
     float side1, side2, hypotenuse;
     int i, j;
