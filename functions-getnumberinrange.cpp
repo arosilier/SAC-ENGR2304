@@ -51,6 +51,8 @@ int getNumberInRange(int a, int b) {
     }
 
   } while ( flag ); // repeat if number is out of range
+  
+  return num;
 
 }
 
