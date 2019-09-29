@@ -32,6 +32,11 @@ int main() {
 }
 
 /* Programmer defined functions  --------------------------------- */
+
+// Function: printStars
+// Job: print a line of stars corresponding to the number sent as input
+// Input: single integer
+// Output: none
 void printStars(int number) {
 
 	// Fill in this code block with the function definition
