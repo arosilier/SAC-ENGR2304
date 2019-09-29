@@ -42,7 +42,7 @@ int getNumberInRange(int a, int b) {
     cout << "Please enter a number between " << a << " and " << b << " (inclusive):";
     cin >> num;
 
-    if (num < a { 
+    if (num < a) { 
       cout << "That's too low" << endl;
       flag = 1; // set sentinel to trigger repeat
     } else if (num > b) {
