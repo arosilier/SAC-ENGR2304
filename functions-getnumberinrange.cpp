@@ -25,6 +25,12 @@ int main() {
 }
 
 /* Programmer defined functions  --------------------------------- */
+
+// Function: getNumberInRange
+// Job: ask the user for an integer in a specified range; if the number entered
+// is out of range, print an error and repeat
+// Input: integers representing the low and high end of the desired range (inclusive)
+// Output: the validated integer entered by the user
 int getNumberInRange(int a, int b) {
 
    int num; 
