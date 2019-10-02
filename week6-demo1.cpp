@@ -1,11 +1,8 @@
 /*----------------------------------------------------*/
-/* Name:                                              */
-/* Class: ENGR-2304-003 Fall 2019                     */
-/* Assignment #:                                      */
-/* Due Date:                                          */
-/*                                                    */
-/* Description of program here...                     */
-/*                                                    */
+/* Name: Prof Rosilier                                */
+/* Class: ENGR-2304                                   */
+/* Week 6 Video Demo - Hot Lava Dice Game             */
+/*----------------------------------------------------*/
 
 // Preprocessor directives
 #include <iostream>  // Required for cout
