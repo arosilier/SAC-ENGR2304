@@ -60,7 +60,7 @@ int main()
         wins ++;
     }
     
-    cout << "You have " << wins << " wins and " << loses << " loses." << endl;
+    cout << "You have " << wins << " wins and " << loses << " losses." << endl;
      
     cout << endl << "Do you want to play again? y for yes, n for no: " ;
     cin >> repeat;
