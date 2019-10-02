@@ -16,6 +16,9 @@ using namespace std;
 int getNumberInRange(int a, int b);
 int rollDice( void );
 
+// Declare Constants
+const int NUM_ROLLS = 3;
+
 // Main function
 int main()
 {
@@ -41,7 +44,7 @@ int main()
     repeat = 'n';
     
     // Roll the dice three times and check for hot lava
-    for (int i=1; i<=3; i++) {
+    for (int i=1; i<=NUM_ROLLS; i++) {
         roll = rollDice();
         cout << "Roll " << i << ": " << roll << endl;
         
