@@ -16,9 +16,6 @@ using namespace std;
 int getNumberInRange(int a, int b);
 int rollDice( void );
 
-// Declare Constants
-const int NUM_ROLLS = 3;
-
 // Main function
 int main()
 {
@@ -29,14 +26,14 @@ int main()
   char repeat;
   
   // Prep Work
-  srand(time(0));
+  srand(time(0));  // seed the random generator
   
-  cout << "Welcome to the Hot Lava Dice Game!" << endl << endl;
+  cout << "Welcome to the Hot Lava Dice Game!" << endl;
 
   do { 
       
     // Get the "hot lava" number
-    cout << "Which number is hot lava?" << endl;
+    cout << endl << "Which number is hot lava?" << endl;
     hotlava = getNumberInRange(1, 6);
     cout << "Ok, I'll try to avoid that! Here we go!" << endl;
     
@@ -44,7 +41,7 @@ int main()
     repeat = 'n';
     
     // Roll the dice three times and check for hot lava
-    for (int i=1; i<=NUM_ROLLS; i++) {
+    for (int i=1; i<=3; i++) {
         roll = rollDice();
         cout << "Roll " << i << ": " << roll << endl;
         
@@ -91,8 +88,8 @@ int getNumberInRange(int a, int b) {
   do {
     flag = 0; // reset sentinel to assume valid input
 
-    cout << "Please enter a number between " << a << " and " << b << " (inclusive):";
-    cin >> num;
+    cout << "Please enter a number between " << a << " and " << b << " (inclusive): ";
+    cin >> num; 
 
     if (num < a) { 
       cout << "That's too low" << endl;
