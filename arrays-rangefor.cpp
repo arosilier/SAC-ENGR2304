@@ -17,12 +17,26 @@ int main () {
   int i; 
   int numberArray[ARRAY_SIZE];
 
+  // initialize the array to be equal to the index value
   for (i = 0; i < ARRAY_SIZE; i++ ) {
     numberArray[i] = i; 
   }
 
+  // print the array
   for (int num : numberArray) {
-   cout << "[" << num << "]"; 
+    cout << "[" << num << "]"; 
   }
 
+  cout << endl;
+  
+  // add one to each array element
+  for (int& num : numberArray) {
+    num++;
+  }
+
+  // print the array
+  for (int num : numberArray) {
+    cout << "[" << num << "]"; 
+  }
+  
 }
