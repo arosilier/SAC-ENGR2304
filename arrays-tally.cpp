@@ -5,7 +5,9 @@
 // This program illustrates using an array to implement  tally chart
 // to count the frequency of dice rolls
 
-#include <iostream>
+#include <iostream>  // Required for cout
+#include <cstdlib>   // Required for random
+#include <ctime>     // Require for time()
 
 using namespace std;
 
@@ -24,7 +26,7 @@ int main()
 	int rolls = 0, i, thisRoll = 0;
 	
 	// seed the random generator
-	srand(time(NULL));
+	srand(time(0));
 	
 	for (i = 0; i < ROLLS; i++) {
 		
