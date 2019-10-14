@@ -6,8 +6,6 @@
 
 // Preprocessor directives
 #include <iostream>  // Required for cout
-#include <iomanip>
-#include <cstdlib>
 
 // Using directive
 using namespace std;
