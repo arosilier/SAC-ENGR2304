@@ -48,19 +48,21 @@ int main()
   cout << "C: ";
   cin >> vector_b[1];
  
+   // Debug
+//  cout << "... matrix A is ..." << endl;
+//  printMatrix(matrix_A, SIZE);
+//  cout << "... vector b is ..." << endl;
+//  printVector(vector_b, SIZE);
+
   // Now find the inverse of matrix_A and multiply by vector_b
   findInverse(matrix_A, matrix_Ainv);
   multiplyMatrixVector(matrix_Ainv, vector_b, vector_x);
   
   // Debug
-  // cout << "... matrix A is ..." << endl;
-  // printMatrix(matrix_A, SIZE);
-  // cout << "... matrix Ainv is ..." << endl;
-  // printMatrix(matrix_Ainv, SIZE);
-  // cout << "... vector b is ..." << endl;
-  // printVector(vector_b, SIZE);
-  // cout << "... vector x is ..." << endl;
-  // printVector(vector_x, SIZE);
+//  cout << "... matrix Ainv is ..." << endl;
+//  printMatrix(matrix_Ainv, SIZE);
+//  cout << "... vector x is ..." << endl;
+//  printVector(vector_x, SIZE);
   
   // The result is contained in vector_x
   cout << fixed << setprecision(2);
@@ -102,8 +104,8 @@ void findInverse(const float matrix[][SIZE], float inverse[][SIZE]) {
   adjoint[0][1] = -matrix[0][1];
   adjoint[1][0] = -matrix[1][0];
 
-  // cout << "... adjoint is ..." << endl;
-  // printMatrix(adjoint, SIZE);
+//   cout << "... adjoint is ..." << endl;
+//   printMatrix(adjoint, SIZE);
 
   // Calculate inverse by multiplying the adjoint by 1/determinant
   inverse[0][0] = adjoint[0][0] * 1 / determinant;
@@ -111,8 +113,8 @@ void findInverse(const float matrix[][SIZE], float inverse[][SIZE]) {
   inverse[1][0] = adjoint[1][0] * 1 / determinant;
   inverse[1][1] = adjoint[1][1] * 1 / determinant;
  
-  // cout << "... inverse is ..." << endl;
-  // printMatrix(inverse, SIZE);
+//   cout << "... inverse is ..." << endl;
+//   printMatrix(inverse, SIZE);
       
   return;
 
@@ -128,13 +130,14 @@ void findInverse(const float matrix[][SIZE], float inverse[][SIZE]) {
 void multiplyMatrixVector(const float matrix[][SIZE], const float vector[], 
                           float result[] ) {
                               
-   // Multiply the matrix by the vector and save into the result array 
-   // result [0] = A1,1 * b1 + A1,2 * b2
-   // result [1] = A2,1 * b1 + A2,2 * b2 
-   
-   result[0] = matrix[0][0] * vector[0] + matrix[0][1] * vector[1];
-   result[1] = matrix[1][0] * vector[0] + matrix[1][1] * vector[1];
-   
+    // result[0] =  A11 * b1 + A12 * b2
+    // result[1] =  A21 * b1 + A22 * b2
+    
+    result[0] = matrix[0][0] * vector[0] +
+                matrix[0][1] * vector[1];
+    result[1] = matrix[1][0] * vector[0] +
+                matrix[1][1] * vector[1];                          
+
    return;
 }
 
@@ -143,10 +146,11 @@ void multiplyMatrixVector(const float matrix[][SIZE], const float vector[],
 void printMatrix(const float matrix[][SIZE], int size) {
     
     for (int i=0; i < size; i++) {
+      cout << "|";
       for (int j=0; j < size; j++) {
         cout << matrix[i][j] << " ";
       }
-      cout << endl;
+      cout << "|" << endl;
     }
     
 }
@@ -154,7 +158,9 @@ void printMatrix(const float matrix[][SIZE], int size) {
 void printVector(const float vector[], int size) {
     
     for (int i=0; i < size; i++) {
-      cout << vector[i] << endl;
+      cout << "|";
+      cout << vector[i];
+      cout << "|" << endl;
     }
     
 }
