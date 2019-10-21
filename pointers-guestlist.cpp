@@ -20,15 +20,19 @@ int main () {
   string *listPtr = nullptr;
   listPtr = new string[numGuests];
 
+  // get the names from the user
   for (int i=0; i<numGuests; i++) {
     cout << "Enter the name for guest " << i+1 << ": "; 
     cin >> *(listPtr + i);
   }
 
+  // print out the guest list
   cout << "Got it! Here is your guest list:" << endl;
   for (int i=0; i<numGuests; i++) {
-    cout << *(listPtr + i) << endl;
+    cout << *(listPtr + i) << endl; 
   }
+
+  // release the memory
+  delete [] listPtr;
   
 }
-	
