@@ -15,47 +15,39 @@ using namespace std;
 // Main function
 int main()
 {
-    
-    // Hand example
-    // 2 + 5i
-    // -5 + 6i
-    // The addition result is (2 + -5) + (5 + 6)i = -3 + 11i
-    // The subtraction result is (2 - -5) + (5 - 6)i = 7 + -1i
-
     ComplexNum num1;
     ComplexNum num2(-5, 6);
-    ComplexNum result;
     
-    // test mutators
+    cout << "printing num1: ";
+    num1.print();
+    cout << endl;
+    
+    cout << "printing num2: ";
+    num2.print();
+    cout << endl;
+    
+    // testing the mutators
     num1.setReal(2);
     num1.setImaginary(5);
-
-    // test accessors
-    cout << "The real part is " << num1.getReal() << endl;
-    cout << "The imaginary part is " << num1.getImaginary() << endl;
-        
-    // test operator overloading with hand example
+    
+    // testing the accessors
+    cout << "The real part of num1 is now " << num1.getReal() << endl;
+    cout << "The imaginary part of num1 is now " << num1.getImaginary() << endl;
+    
+    // test addition
+    cout << "The addition result is ";
+    ComplexNum result;
     result = num1 + num2;
-    
-    cout << "The addition result is:" << endl;
-    num1.print();
-    cout << " + ";
-    num2.print();
-    cout << " = ";
     result.print();
     cout << endl;
-    
+
+    // test substraction
+    cout << "The subtraction result is ";
     result = num1 - num2;
-    
-    cout << "The subtraction result is:" << endl;
-    num1.print();
-    cout << " - ";
-    num2.print();
-    cout << " = ";
     result.print();
     cout << endl;
     
-    // Try all of the hand example variations
+        // Try all of the hand example variations
     // 1+2i : normal case
     // 1-2i : if imaginary part is negative, don't print the + sign
     // 2i  or -2i : if the real part is zero, don't print the real part or the + sign
@@ -103,7 +95,6 @@ int main()
     num1.setImaginary(0);
     num1.print();
     cout << endl;
-    
-    return 1;
+
 }
 

@@ -21,35 +21,22 @@ ComplexNum::ComplexNum(int r, int i) {
     real = r;
     imaginary = i;
 }
-  
+   
 // operators
 ComplexNum ComplexNum::operator + (ComplexNum& right) {
     ComplexNum result;
-    
     result.real = real + right.real;
     result.imaginary = imaginary + right.imaginary;
-    
     return result;
 }
 
 ComplexNum ComplexNum::operator - (ComplexNum& right) {
     ComplexNum result;
-    
     result.real = real - right.real;
     result.imaginary = imaginary - right.imaginary;
-    
     return result;
 }
-  
-// accessors
-int ComplexNum::getReal() const {
-    return real;
-}
-
-int ComplexNum::getImaginary() const {
-    return imaginary;
-}
-  
+   
 // mutators
 void ComplexNum::setReal(int r) {
     real = r;
@@ -58,33 +45,35 @@ void ComplexNum::setReal(int r) {
 void ComplexNum::setImaginary(int i) {
     imaginary = i;
 }
-  
-// other methods
+   
+// additional methods
 void ComplexNum::print() {
+    
+    // this is the easy way
+    // cout << real << "+" << imaginary << "i";
     
     if (real == 0 && imaginary == 0) {
         cout << 0;
     }
     
     if (real != 0) {
-      cout << real;
+        cout << real;
     }
     
     if (imaginary != 0) {
         if (real != 0) {
-            if (imaginary > 0) { 
-                cout << "+";         
-            }
-            if (imaginary == -1) {
-                cout << "-";
-            } else if (imaginary != 1) {
-                cout << imaginary;
-            }
-        } else {
+            if (imaginary > 0) {
+                cout << "+";
+            } 
+        }
+        if (imaginary == -1) {
+            cout << "-";
+        } else if (imaginary != 1) {
             cout << imaginary;
         }
-        cout << "i"; 
+        cout << "i";
     }
-
+    
+    
 }
-
+  
