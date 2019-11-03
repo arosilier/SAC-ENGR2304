@@ -1,5 +1,5 @@
 // ENGR 2304 - Mini Program
-// Week 11 - Vectors
+// Week 11 - OOP Applications
 //
 // oop-vectordata.cpp
 // This program will open both an input and output data File
