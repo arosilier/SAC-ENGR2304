@@ -20,7 +20,7 @@ int main()
         v.push_back(i);
   
     cout << "Traversing using begin() and end(): ";
-    for (auto i = v.begin(); i < v.end(); i++)
+    for (auto i = v.begin(); i != v.end(); i++)
         cout << *i << " ";
     cout << endl;
     
@@ -29,25 +29,25 @@ int main()
     v.push_back(11);
     v.push_back(12);
     cout << "After removing one and adding three more elements: ";
-    for (auto i = v.begin(); i < v.end(); i++)
+    for (auto i = v.begin(); i != v.end(); i++)
         cout << *i << " ";
     cout << endl;
  
     random_shuffle(v.begin(), v.end());
         cout << "After random_shuffle(): ";
-    for (auto i = v.begin(); i < v.end(); i++)
+    for (auto i = v.begin(); i != v.end(); i++)
         cout << *i << " ";
     cout << endl;
  
     sort(v.begin(), v.end());
     cout << "After sort(): ";
-    for (auto i = v.begin(); i < v.end(); i++)
+    for (auto i = v.begin(); i != v.end(); i++)
         cout << *i << " ";
     cout << endl;
  
     reverse(v.begin(), v.end());
     cout << "After reverse(): ";
-    for (auto i = v.begin(); i < v.end(); i++)
+    for (auto i = v.begin(); i != v.end(); i++)
         cout << *i << " ";
     cout << endl;
 
