@@ -16,7 +16,7 @@ int main()
     vector<int> v;
  
     cout << "Creating vector " << endl;
-    for (int i = 1; i <= 5; i++)
+    for (int i = 100; i <= 105; i++)
         v.push_back(i);
   
     cout << "Traversing using begin() and end(): ";
@@ -25,9 +25,9 @@ int main()
     cout << endl;
     
     v.pop_back();
-    v.push_back(10);
-    v.push_back(11);
-    v.push_back(12);
+    v.push_back(110);
+    v.push_back(111);
+    v.push_back(112);
     cout << "After removing one and adding three more elements: ";
     for (auto i = v.begin(); i != v.end(); i++)
         cout << *i << " ";
