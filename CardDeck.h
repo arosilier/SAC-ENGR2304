@@ -11,6 +11,7 @@ class CardDeck {
     CardDeck();
     void shuffleDeck();
     Card draw();
+    bool deckEmpty() { return theDeck.empty(); };
   private:
     vector<Card> theDeck;
     vector<Card> deltCards;
