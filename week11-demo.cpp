@@ -23,23 +23,17 @@ int main()
     Play game("User", "Computer");
     
     while (game.getStatus() == GAMEON) {
-        cout << "Turn #" << ++turnCount << "..................." << endl;
+        cout << "Round #" << ++turnCount << "..................." << endl;
         card1 = game.drawCard(PLAYER1);
         card2 = game.drawCard(PLAYER2);
         player = game.compareCards(card1, card2);
         while (player == TIE) {
             cout << "It's a WAR!" << endl;
-            game.updateStatus();
             card1 = game.drawCard(PLAYER1);
-            game.updateStatus();
             card1 = game.drawCard(PLAYER1);            
-            game.updateStatus();
             card1 = game.drawCard(PLAYER1);
-            game.updateStatus();
             card2 = game.drawCard(PLAYER2);
-            game.updateStatus();
             card2 = game.drawCard(PLAYER2);
-            game.updateStatus();
             card2 = game.drawCard(PLAYER2);
             player = game.compareCards(card1, card2);            
         }
