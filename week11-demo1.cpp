@@ -7,7 +7,6 @@
 // Preprocessor directives
 #include <iostream>
 #include "Game.h"
-#include "Player.h"
 
 // Using directive
 using namespace std;
