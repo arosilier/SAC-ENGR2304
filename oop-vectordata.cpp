@@ -40,6 +40,7 @@ int main() {
     double number;
     vector<double> v;
   
+    cout << "Reading list of numbers from input file." << endl;
     do {
 
         // TO DO: insert code here to read a number from the input file and
@@ -55,7 +56,7 @@ int main() {
     cout << "Sorted list of numbers..." << endl; 
     printVector(v);
   
-    cout << "Printing sorted list to file " << filename << endl;
+    cout << "Printing sorted list to output file." << endl;
   
     // TO DO: insert code to write the sorted vector to the output file
 
