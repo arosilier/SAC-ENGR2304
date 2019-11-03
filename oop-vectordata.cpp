@@ -4,8 +4,7 @@
 // oop-vectordata.cpp
 // This program will open both an input and output data File
 // Data from the input file will be read into a vector, sorted, and
-// then written to the output file. The first line of both the input
-// and output files contains the number of items contained in the file
+// then written to the output file. 
 
 #include <iostream>
 #include <fstream>   // Required for file I/O
