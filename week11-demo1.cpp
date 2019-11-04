@@ -15,8 +15,7 @@ using namespace std;
 // Main function
 int main()
 {
-    int player, round = 0;
-    Card card1, card2;
+    int round = 0;
     
     srand(time(NULL)); //Must seed RNG 1 time!
     
