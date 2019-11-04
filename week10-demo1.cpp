@@ -6,7 +6,7 @@
 
 // Preprocessor directives
 #include <iostream>
-#include "ComplexNum.h"  // must be included to use Employee class
+#include "ComplexNum.h"  // must be included to use ComplexNum class
 
 // Using directive
 using namespace std;
