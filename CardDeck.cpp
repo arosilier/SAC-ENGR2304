@@ -16,7 +16,7 @@ CardDeck::CardDeck()
     theDeck.push_back(Card('D',i));
     theDeck.push_back(Card('C',i));
   }
-  // ACR - move to main() -- srand(time(NULL)); //Must seed RNG 1 time!
+  srand(time(NULL)); //Must seed RNG 1 time!
 }
 Card CardDeck::draw()
 {
