@@ -2,7 +2,7 @@
 #define PLAYER_H
 
 /******************************************************************************
- Player class - This class is responsbile for handling the flow of the game 
+ Player class - This class is responsbile for modeling the player of the game
  Declaration
  Filename: Player.h
 
