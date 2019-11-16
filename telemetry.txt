@@ -1,0 +1,15 @@
+current: 0.00 Peak Current: 31.89 Voltage: 40.52 Watts :0.00
+current: 0.75 Peak Current: 31.89 Voltage: 41.62 Watts :31.22
+current: 0.00 Peak Current: 31.89 Voltage: 41.35 Watts :0.00
+current: 3.96 Peak Current: 31.89 Voltage: 37.91 Watts :150.27
+current: 20.45 Peak Current: 31.89 Voltage: 31.73 Watts :648.83
+current: 21.10 Peak Current: 31.89 Voltage: 31.46 Watts :663.69
+current: 21.76 Peak Current: 31.89 Voltage: 29.40 Watts :639.66
+current: 21.71 Peak Current: 31.89 Voltage: 34.48 Watts :748.46
+current: 19.02 Peak Current: 31.89 Voltage: 32.01 Watts :608.77
+current: 21.67 Peak Current: 31.89 Voltage: 30.08 Watts :651.79
+current: 21.87 Peak Current: 31.89 Voltage: 31.04 Watts :678.92
+current: 22.48 Peak Current: 31.89 Voltage: 30.08 Watts :676.23
+current: 22.81 Peak Current: 31.89 Voltage: 30.77 Watts :701.92
+current: 22.11 Peak Current: 31.89 Voltage: 31.18 Watts :689.40
+current: 22.35 Peak Current: 31.89 Voltage: 28.30 Watts :632.55
